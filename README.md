@@ -9,9 +9,9 @@ ii can be used a simple IRC client, or as a basis for bots. By default, all this
 
 1. Clone the repo:
 
-    % git clone https://www.github/com/bertiebaggio/ii-docker
+      % git clone https://www.github/com/bertiebaggio/ii-docker
 
-2. Update `Dockerfile` to set environment variables for server, nick, fullname and ii directory as desired (alternatively, these can be specified at run time using -e/--env/--env-file)
+2. Update `Dockerfile` to set environment variables for server, nick, fullname and ii directory as desired (alternatively, these can be specified at run time using `-e`/`--env`/`--env-file`)
 
 3. Build image
 
@@ -26,11 +26,11 @@ Alternatively, you can use the Docker Hub image directly. For example
 
     % docker run -d bertieb/ii-docker:latest --env SERVER=irc.oftc.net --env NICK=iiuser --env FULLNAME="II USER" --name ii
 
-Upstream ii is relatively stable. Their latest published version and tag is 1.8 from 2018; this is mapped to tag :1.8. There have been commits since then, and tag :latest pulls these in.
+Upstream ii is relatively stable. Their latest published version and tag is 1.8 from 2018; this is mapped to tag `:1.8`. There have been commits since then, and tag `:latest` pulls these in.
 
 ### Volumes
 
-If you wish to interact with ii from outside the container, you can create a volume for the directory specified by the envirment variable $IIDIR, which is `/ii-io/` by default. For example:
+If you wish to interact with ii from outside the container, you can create a volume for the directory specified by the envirment variable `$IIDIR`, which is `/ii-io/` by default. For example:
 
     % docker run -d -v ./ii/:/ii-io/ bertieb/ii-docker:latest
 
@@ -40,6 +40,6 @@ All development work on ii itself can be found at [the upstream repo](https://gi
 
 ii is copyright:
 
-2014-2018 Hiltjo Posthuma <hiltjo at codemadness dot org>
-2005-2006 Anselm R. Garbe <garbeam@wmii.de>
-2005-2011 Nico Golde <nico at ngolde dot de>
+- 2014-2018 Hiltjo Posthuma <hiltjo at codemadness dot org>
+- 2005-2006 Anselm R. Garbe <garbeam@wmii.de>
+- 2005-2011 Nico Golde <nico at ngolde dot de>

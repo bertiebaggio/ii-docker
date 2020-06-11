@@ -9,7 +9,7 @@ ii can be used a simple IRC client, or as a basis for bots. By default, all this
 
 1. Clone the repo:
 
-        % git clone https://www.github/com/bertiebaggio/ii-docker
+        % git clone https://www.github.com/bertiebaggio/ii-docker
 
 2. Update `Dockerfile` to set environment variables for server, nick, fullname and ii directory as desired (alternatively, these can be specified at run time using `-e`/`--env`/`--env-file`)
 

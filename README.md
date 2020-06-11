@@ -33,3 +33,13 @@ Upstream ii is relatively stable. Their latest published version and tag is 1.8 
 If you wish to interact with ii from outside the container, you can create a volume for the directory specified by the envirment variable $IIDIR, which is `/ii-io/` by default. For example:
 
     % docker run -d -v ./ii/:/ii-io/ bertieb/ii-docker:latest
+
+## Credits
+
+All development work on ii itself can be found at [the upstream repo](https://git.suckless.org/ii/). 
+
+ii is copyright:
+
+2014-2018 Hiltjo Posthuma <hiltjo at codemadness dot org>
+2005-2006 Anselm R. Garbe <garbeam@wmii.de>
+2005-2011 Nico Golde <nico at ngolde dot de>
